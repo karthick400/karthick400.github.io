@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Single-page portfolio website">
+	<title>Portfolio</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+	<!-- .nojekyll is included at the repository root for GitHub Pages. -->
+	<nav id="navbar">
+		<a class="nav-brand" href="#hero"><span class="accent-green">Deepan</span> Karthik</a>
+		<button id="hamburger" class="hamburger" type="button" aria-label="Toggle navigation" aria-controls="nav-links" aria-expanded="false">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<div id="nav-links" class="nav-links">
+			<a href="#hero">Home</a>
+			<a href="#services">Services</a>
+			<a href="#projects">Projects</a>
+			<a href="#about">About</a>
+			<a href="#contact">Contact</a>
+		</div>
+	</nav>
+
+	<section id="hero">
+		<div class="hero-content fade-in-up">
+			<p class="hero-eyebrow" style="font-family: 'Space Mono', monospace; color: #16A34A;">AI Automation &amp; Data Solutions</p>
+			<h1>Hi, I'm <span class="accent-green">Deepan</span> Karthik</h1>
+			<p>I build intelligent systems that turn data into decisions —<br>for clients who want results and teams who want a builder.</p>
+			<div class="hero-actions">
+				<a class="hire-me" href="#contact">Hire Me</a>
+				<a class="view-projects" href="#projects">View Projects</a>
+			</div>
+		</div>
+		<div class="hero-media fade-in-up">
+			<div class="hero-image-wrap">
+				<img class="hero-photo" src="assets/images/photo.png" alt="Deepan Karthik">
+				<a class="hire-tag" href="#contact">Open to Hire</a>
+			</div>
+		</div>
+	</section>
+
+	<section id="services">
+		<h2>data &amp; AI native systems and solutions</h2>
+
+		<div class="services-grid">
+
+			<article class="service-card fade-in-up">
+				<div class="service-header">
+					<i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+					<h3>Weekly Intelligence Report</h3>
+				</div>
+				<p>Automated weekly sales insights: analysis of last week's sales data and visualizations using automation. AI analyzes the charts and sends insights directly to email.</p>
+				<div class="service-flow">
+					<div class="service-step">Connect Data</div>
+					<div class="service-step">AI Analyzes</div>
+					<div class="service-step">Report Delivered</div>
+				</div>
+			</article>
+
+			<article class="service-card fade-in-up">
+				<div class="service-header">
+					<i class="fa-solid fa-robot" aria-hidden="true"></i>
+					<h3>AI CRM &amp; customer lead Chatbot</h3>
+				</div>
+				<p>24/7 lead capture, appointment booking, and CRM sync across WhatsApp, Instagram, and website.</p>
+				<div class="service-flow">
+					<div class="service-step">Lead Sends Message</div>
+					<div class="service-step">AI Qualifies &amp; Books</div>
+					<div class="service-step">Logged in CRM</div>
+				</div>
+			</article>
+
+		</div>
+
+		<div class="tech-tags" aria-hidden="false">
+			<span class="tech-tag">Python</span>
+			<span class="tech-tag">LangGraph</span>
+			<span class="tech-tag">CrewAI</span>
+			<span class="tech-tag">NVIDIA NIM</span>
+			<span class="tech-tag">Plotly</span>
+			<span class="tech-tag">Pandas</span>
+			<span class="tech-tag">LangChain</span>
+            <span class="tech-tag">RAG</span>
+	</section>
+
+	<section id="projects">
+		<h2>Projects</h2>
+
+		<div class="projects-grid">
+
+			<article class="project-card fade-in-up">
+				<div class="project-image">
+					<img src="assets/images/pet-paw.jpg" alt="Pet-paw project">
+				</div>
+				<div class="project-content">
+					<h3>Pet-paw shop Weekly Intelligence Report</h3>
+					<p>Automated weekly sales &amp; inventory report system for a pet food brand. Pulls data, runs analysis with AI, generates Plotly charts, and emails the report every Monday morning.</p>
+					<div class="project-tags">
+						<span class="project-tag">Python</span>
+						<span class="project-tag">Pandas</span>
+						<span class="project-tag">Plotly</span>
+						<span class="project-tag">smtplib</span>
+					</div>
+					<div class="project-actions">
+						<a class="project-btn" href="#">GitHub</a>
+					</div>
+				</div>
+			</article>
+
+			<article class="project-card fade-in-up">
+				<div class="project-image">
+					<img src="assets/images/CRM AI lead.jpg" alt="AI Lead & Booking Chatbot project">
+				</div>
+				<div class="project-content">
+					<h3>AI Lead &amp; Booking Chatbot</h3>
+					<p>Conversational AI agent that qualifies leads, books appointments, and syncs to CRM — across WhatsApp, Instagram, and web.</p>
+					<div class="project-tags">
+						<span class="project-tag">LangGraph</span>
+						<span class="project-tag">fastAPI</span>
+					</div>
+					<span class="in-progress">In Progress</span>
+				</div>
+			</article>
+
+		</div>
+	</section>
+
+	<section id="about">
+		<h2>About</h2>
+
+		<div class="about-grid">
+			<div class="about-card fade-in-up">
+				<img class="hero-photo" src="assets/images/photo.png" alt="Deepan Karthik">
+			</div>
+
+			<div class="about-card fade-in-up">
+				<p>I'm Deepan Karthik, a ML engineer and AI automation builder based in Chennai.</p>
+				<p>I help businesses make sense of their data and automate the repetitive — so they can focus on what matters.</p>
+				<p>Currently pursuing Bsc.data science at Sathyabama Institute of Science and Technology.</p>
+
+				<div class="skill-group">
+					<span class="skill-category">Data</span>
+					<div class="skill-tags">
+						<span class="skill-tag">Python (pandas, numpy, matpoltlib)</span>
+						<span class="skill-tag">ML model building</span>
+						<span class="skill-tag">Excel</span>
+					</div>
+				</div>
+
+				<div class="skill-group">
+					<span class="skill-category">AI/Agents</span>
+					<div class="skill-tags">
+						<span class="skill-tag">LangChain</span>
+						<span class="skill-tag">LangGraph</span>
+						<span class="skill-tag">CrewAI</span>
+					</div>
+				</div>
+
+				<div class="skill-group">
+					<span class="skill-category">Tools</span>
+					<div class="skill-tags">
+						<span class="skill-tag">Git</span>
+						<span class="skill-tag">GitHub</span>
+						<span class="skill-tag">VS Code</span>
+						<span class="skill-tag">Notion</span>
+					</div>
+				</div>
+
+				<div class="education-row">
+					<span class="skill-category">Education</span>
+					<p>BSc.data science, Sathyabama Institute, Expected [2027].</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact">
+		<h2>Contact</h2>
+
+		<div class="contact-wrap about-card">
+			<div class="about-grid">
+				<div class="about-card fade-in-up">
+					<p class="skill-category" style="font-family: 'Space Mono', monospace;">GET IN TOUCH</p>
+					<h3 style="font-family: 'Syne', sans-serif; font-size: 3rem; line-height: 1.05; color: var(--text); margin-bottom: 1rem;">Let's work together</h3>
+					<p>I'm open to freelance projects and internship opportunities. Weekly reports, AI chatbots, or just a conversation — let's talk.</p>
+
+					<div class="contact-links">
+						<a class="contact-link" href="#">
+							<span class="contact-icon"><i class="fa-solid fa-envelope"></i></span>
+							<span>your@email.com</span>
+						</a>
+						<a class="contact-link" href="https://www.linkedin.com/in/deepan-karthick-60870b324?utm_source=share_via&utm_content=profile&utm_medium=member_android">
+							<span class="contact-icon"><i class="fa-brands fa-linkedin"></i></span>
+							<span>linkedin.com/in/deepan-karthick-60870b324</span>
+						</a>
+						<a class="contact-link" href="https://github.com/karthick400">
+							<span class="contact-icon"><i class="fa-brands fa-github"></i></span>
+							<span>karthick400</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="about-card fade-in-up">
+					<form action="https://formspree.io/f/YOURCODE" method="POST">
+						<div class="form-row">
+							<input type="text" name="name" placeholder="Kabilan" aria-label="Name">
+							<input type="email" name="email" placeholder="kabi@company.com" aria-label="Email">
+						</div>
+						<input type="text" name="subject" placeholder="Project inquiry" aria-label="Subject">
+						<textarea name="message" rows="5" placeholder="Tell me about your project..." aria-label="Message"></textarea>
+						<button class="contact-btn email" type="submit">Send message →</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<p>© 2026 Deepan Karthik. All rights reserved.</p>
+	</footer>
+
+	<script src="js/main.js"></script>
+	<script src="js/hamburger.js"></script>
+</body>
+</html>
+
