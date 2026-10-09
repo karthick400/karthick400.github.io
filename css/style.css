@@ -466,7 +466,7 @@ footer {
 	border: 1px solid transparent;
 	border-radius: var(--radius);
 	background: #1A1A1A;
-	color: var(--text);
+	color: #FFFFFF;
 	font: inherit;
 	outline: none;
 	transition: border-color 0.25s ease, box-shadow 0.25s ease;
@@ -479,7 +479,7 @@ footer {
 
 .contact-wrap input::placeholder,
 .contact-wrap textarea::placeholder {
-	color: var(--text-muted);
+	color: #6B7280;
 }
 
 .contact-wrap input:focus,
